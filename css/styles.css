@@ -80,6 +80,7 @@ body {
 .main__title {
   color: white;
   font-size: 25px;
+  padding-bottom: 50px;
 }
 
 .categories__title {
@@ -92,9 +93,10 @@ body {
 
 .carousel {
   display: flex;
-  justify-content: center;
-  position: relative;
   width: 100%;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity ;
 }
 
 .carousel__container {
@@ -124,12 +126,14 @@ body {
   display: inline-block;
   width: 200px;
   height: 250px;
-  margin-right: 10px;
+  margin: 0 10px;
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
+  transform-origin: center left;
+}
+.carousel div:last-child{
+  margin-right: 20px;
 }
 
 .carousel-item:hover ~ .carousel-item {
