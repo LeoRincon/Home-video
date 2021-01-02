@@ -232,3 +232,18 @@ body {
     align-items: flex-start;
   }
 }
+
+@media screen and (min-width: 1765px) {
+  .carousel{
+    justify-content: center;
+  }
+
+  .main{
+    margin-bottom: 100px;
+  }
+
+  main .categories__title{
+    font-size: 30px;
+    text-align: center;
+  }
+}
